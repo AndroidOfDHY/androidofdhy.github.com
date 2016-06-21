@@ -1,199 +1,225 @@
 <!DOCTYPE html>
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/znBdcsStyle.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="qc:admins" content="44424776513050163527655">
-    <link rel="icon" href="../images/favicon.ico">
-    <title>安卓开发教程</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Android开发教程">
-    <meta name="keywords" content="Android 教育">
+<html lang="zh-CN">
 
-    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/codemirror.css">
-    <link rel="stylesheet" href="css/blackboard.css">
-    <link rel="stylesheet" href="css/select.min.css">
-    <link rel="stylesheet" href="css/angular-ui-tree.min.css">
-    <link rel="stylesheet" href="css/ng-img-crop.css">
-    <link rel="stylesheet" href="css/xeditable.css">
-    <!-- build:css styles/base.css -->
-    <link rel="stylesheet" href="css/base.css">
-    <!-- endbuild -->
-    <link type="text/css" rel="stylesheet" href="css/pygments.css">
-    <link type="text/css" rel="stylesheet" href="css/ansi.css">
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="css/font.css">
+		<link rel="stylesheet" href="css/znBdcsStyle.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta property="qc:admins" content="44424776513050163527655">
+		<link rel="icon" href="../images/favicon.ico">
+		<title>安卓开发教程</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="description" content="Android开发教程">
+		<meta name="keywords" content="Android 教育">
 
-<body id="f3App" ng-app="f3App" ng-controller="NotifyCtrl" class="ng-scope on-canvas">
-<!--[if lt IE 9]>
+		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/codemirror.css">
+		<link rel="stylesheet" href="css/blackboard.css">
+		<link rel="stylesheet" href="css/select.min.css">
+		<link rel="stylesheet" href="css/angular-ui-tree.min.css">
+		<link rel="stylesheet" href="css/ng-img-crop.css">
+		<link rel="stylesheet" href="css/xeditable.css">
+		<!-- build:css styles/base.css -->
+		<link rel="stylesheet" href="css/base.css">
+		<!-- endbuild -->
+		<link type="text/css" rel="stylesheet" href="css/pygments.css">
+		<link type="text/css" rel="stylesheet" href="css/ansi.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body id="f3App" ng-app="f3App" ng-controller="NotifyCtrl" class="ng-scope on-canvas">
+		<!--[if lt IE 9]>
 <div class="error chromeframe">您的浏览器版本<strong>很旧很旧</strong>，为了正常地访问网站，请升级您的浏览器 <a target="_blank" href="http://browsehappy.com">立即升级</a></div>
 <![endif]-->
 
-<div class="header" >
-    <div class="">
-        <div class="header-nav">
-            <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<div class="header">
+			<div class="">
+				<div class="header-nav">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a class="navbar-brand" href="../index.html">
+							<h1><a class="navbar-brand" href="../index.html">
                         <!--<i class="glyphicon glyphicon-education" aria-hidden="true"></i>-->
                         <span><img src="images/LOGO.png"></span>
                     </a></h1>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav right">
-                        <li><a class="hvr-overline-from-center button2 active" href="../index.html">主页</a></li>
-                        <li><a class="hvr-overline-from-center button2" href="all_course.html">教程</a></li>
-                        <li><a class="hvr-overline-from-center button2" href="#">资源</a></li>
-                        <li><a class="hvr-overline-from-center button2" href="#">推荐</a></li>
-                        <li><a class="hvr-overline-from-center button2" href="#">关于</a></li>
-                    </ul>
-                </div><!-- /navbar-collapse -->
-            </nav>
-        </div>
-    </div>
-</div>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav right">
+								<li><a class="hvr-overline-from-center button2 active" href="../index.html">主页</a></li>
+								<li><a class="hvr-overline-from-center button2" href="all_course.html">教程</a></li>
+								<li><a class="hvr-overline-from-center button2" href="http://www.androiddevtools.cn/" target="_blank">资源</a></li>
+								<li><a class="hvr-overline-from-center button2" href="#">推荐</a></li>
+								<li><a class="hvr-overline-from-center button2" href="#">关于</a></li>
+							</ul>
+						</div>
+						<!-- /navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+		</div>
 
+		<section id="commoncontent" ng-controller="PageLoaderCtrl" du-scroll-container="" class="ng-scope">
+			<div id="page-loading" class="page" style="display: none;">
+				<div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;">
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-0-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-1-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(27deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-2-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(55deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-3-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(83deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-4-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(110deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-5-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(138deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-6-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(166deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-7-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(193deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-8-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(221deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-9-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(249deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-10-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(276deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-11-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(304deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+					<div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-12-13 1.42857s linear infinite;">
+						<div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(332deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div>
+					</div>
+				</div>
+			</div>
+			<div id="page-container" class="page" style="visibility: visible;">
 
+				<div class="container">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<strong class="size-h4">中级课程</strong>
+							<i class="glyphicon glyphicon-option-vertical"></i>
+						</div>
+						<div class="panel-body">
+							<div class="row">
 
-
-
-<section id="commoncontent" ng-controller="PageLoaderCtrl" du-scroll-container="" class="ng-scope">
-    <div id="page-loading" class="page" style="display: none;"><div class="spinner" role="progressbar" style="position: absolute; width: 0px; z-index: 2000000000; left: 50%; top: 50%;"><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-0-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-1-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(27deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-2-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(55deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-3-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(83deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-4-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(110deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-5-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(138deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-6-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(166deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-7-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(193deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-8-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(221deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-9-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(249deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-10-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(276deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-11-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(304deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: opacity-60-25-12-13 1.42857s linear infinite;"><div style="position: absolute; width: 14px; height: 5px; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(332deg) translate(11px, 0px); border-radius: 2px; background: rgb(0, 0, 0);"></div></div></div></div>
-    <div id="page-container" class="page" style="visibility: visible;">
-
-        <div class="container">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <strong class="size-h4">中级课程</strong>
-                    <i class="glyphicon glyphicon-option-vertical"></i>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="box box-transparent">
-                                <div class="box-content">
-                                    <div class="media">
-                                        <a href="#" class="pull-left zoominBookAvatar bookAvatarPic">
-                                            <img src="images/logo_zKWV2J6.jpg" class="media-object img-rounded img90_134" alt="Pro Git">
-                                        </a>
-                                        <div class="media-body">
-                                            <div class="media-heading size-h4"><strong>
-                                                <a href="#">Pro Git</a>
+								<div class="col-md-4">
+									<div class="box box-transparent">
+										<div class="box-content">
+											<div class="media">
+												<a href="https://github.com/AndroidOfDHY/Medium_01_VirtualMouseKey" target="_blank" class="pull-left zoominBookAvatar bookAvatarPic">
+													<img src="images/VirtualMouseKey.jpg" class="media-object img-rounded img90_134" alt="Pro Git">
+												</a>
+												<div class="media-body">
+													<div class="media-heading size-h4"><strong>
+                                                <a href="https://github.com/AndroidOfDHY/Medium_01_VirtualMouseKey" target="_blank">Virtual Mouse Key</a>
                                             </strong></div>
-                                            <p class="text-primary">于2015年1月18日发布</p>
-                                            <p class="text-muted">Git 是Linux之父Linus Torvalds为了开发linux内核更加方便而开发的一套版本控制系统。从2005年以来迅速风靡开源世界。小到一个开发工作室，大到像Google ...</p>
-                                        </div>
-                                    </div>
-                                    <div class="meta">
-                                        <ul class="list-unstyled list-inline">
-                                            <li>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star-empty"></i>
-                                            </li>
-                                            <!--<li class="pull-right">
-                                                <span>0 条评价</span>
-                                                <span>901 人学习</span>
-                                            </li>-->
-                                        </ul>
-                                    </div>
+													<p class="text-primary">于2011年完成</p>
+													<p class="text-muted">2011 Google Android学术合作计划项目</p>
+												</div>
+											</div>
+											<div class="meta">
+												<ul class="list-unstyled list-inline">
+													<li>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star-empty"></i>
+													</li>
+												</ul>
+											</div>
 
-                                    <a class="btn btn-info" href="#" role="button">开始学习 »</a>
-                                </div>
-                            </div>
-                        </div>
+											<a class="btn btn-info" href="https://github.com/AndroidOfDHY/Medium_01_VirtualMouseKey" target="_blank" role="button">开始学习 »</a>
+										</div>
+									</div>
+								</div>
 
-
-                        <!-- <div class="col-md-4">
-                            <div class="box box-transparent">
-                                <div class="box-content">
-                                    <div class="media">
-                                        <a href="#" class="pull-left zoominBookAvatar bookAvatarPic">
-                                            <img src="images/logo_0TwMPgU.jpg" class="media-object img-rounded img90_134" alt="PHP 最佳实践">
-                                        </a>
-                                        <div class="media-body">
-                                            <div class="media-heading size-h4"><strong>
-                                                <a href="#">PHP 最佳实践</a>
+								<div class="col-md-4">
+									<div class="box box-transparent">
+										<div class="box-content">
+											<div class="media">
+												<a href="https://github.com/AndroidOfDHY/Medium_02_E-commerce" target="_blank" class="pull-left zoominBookAvatar bookAvatarPic">
+													<img src="images/E-commerce.jpg" class="media-object img-rounded img90_134" alt="PHP 最佳实践">
+												</a>
+												<div class="media-body">
+													<div class="media-heading size-h4"><strong>
+                                                <a href="https://github.com/AndroidOfDHY/Medium_02_E-commerce" target="_blank">E-commerce</a>
                                             </strong></div>
-                                            <p class="text-primary">于2015年1月21日发布</p>
-                                            <p class="text-muted">这是一份指南，在 PHP 程序员遇到一些常见低层次任务但不明确最佳做法（由于 PHP 可能提供了多种解决方案）之时，为其建议最佳实践。 例如：连接数据库是一个常见任务，PHP 中提 ...</p>
-                                        </div>
-                                    </div>
-                                    <div class="meta">
-                                        <ul class="list-unstyled list-inline">
-                                            <li>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star-empty"></i>
-                                            </li>
-                                            <li class="pull-right">
-                                                <span>0 条评价</span>
-                                                <span>1179 人学习</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+													<p class="text-primary">于2011年完成</p>
+													<p class="text-muted">2011 Google Android学术合作计划项目</p>
+												</div>
+											</div>
+											<div class="meta">
+												<ul class="list-unstyled list-inline">
+													<li>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star-empty"></i>
+													</li>
+												</ul>
+											</div>
 
-                                    <a class="btn btn-info" href="#" role="button">开始学习 »</a>
-                                </div>
-                            </div>
-                        </div> -->
+											<a class="btn btn-info" href="https://github.com/AndroidOfDHY/Medium_02_E-commerce" target="_blank" role="button">开始学习 »</a>
+										</div>
+									</div>
+								</div>
 
-
-                        <!--<div class="col-md-4">
-                            <div class="box box-transparent">
-                                <div class="box-content">
-                                    <div class="media">
-                                        <a href="#" class="pull-left zoominBookAvatar bookAvatarPic">
-                                            <img src="images/AngularJS.png" class="media-object img-rounded img90_134" alt="AngularJS入门教程">
-                                        </a>
-                                        <div class="media-body">
-                                            <div class="media-heading size-h4"><strong>
-                                                <a href="#">AngularJS入门教程</a>
+								<div class="col-md-4">
+									<div class="box box-transparent">
+										<div class="box-content">
+											<div class="media">
+												<a href="https://github.com/AndroidOfDHY/Medium_03_DevelopmentCollaborationPlatform" target="_blank" class="pull-left zoominBookAvatar bookAvatarPic">
+													<img src="images/DevelopmentCollaborationPlatform.jpg" class="media-object img-rounded img90_134" alt="AngularJS入门教程">
+												</a>
+												<div class="media-body">
+													<div class="media-heading size-h4"><strong>
+                                                <a href="https://github.com/AndroidOfDHY/Medium_03_DevelopmentCollaborationPlatform" target="_blank">Development Collaboration Platform</a>
                                             </strong></div>
-                                            <p class="text-primary">于2015年1月23日发布</p>
-                                            <p class="text-muted">这本小教程是学习AngularJS的敲门砖，对AngularJS一无所知的小白可以用它来快速起步！</p>
-                                        </div>
-                                    </div>
-                                    <div class="meta">
-                                        <ul class="list-unstyled list-inline">
-                                            <li>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star"></i>
-                                                <i class="glyphicon glyphicon-star-empty"></i>
-                                            </li>
-                                            <li class="pull-right">
-                                                <span>0 条评价</span>
-                                                <span>678 人学习</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+													<p class="text-primary">于2012年完成</p>
+													<p class="text-muted">第三届全国服务外包创新创业大赛三等奖作品</p>
+												</div>
+											</div>
+											<div class="meta">
+												<ul class="list-unstyled list-inline">
+													<li>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star"></i>
+														<i class="glyphicon glyphicon-star-empty"></i>
+													</li>
+												</ul>
+											</div>
+											<a class="btn btn-info" href="https://github.com/AndroidOfDHY/Medium_03_DevelopmentCollaborationPlatform" target="_blank" role="button">开始学习 »</a>
+										</div>
+									</div>
+								</div>
 
-                                    <a class="btn btn-info" href="#" role="button">开始学习 »</a>
-                                </div>
-                            </div>
-                        </div>-->
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
-
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -233,8 +259,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -272,8 +297,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -311,11 +335,10 @@
                             </div>
                         </div>-->
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -353,8 +376,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -392,8 +414,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -431,11 +452,10 @@
                             </div>
                         </div>-->
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -473,8 +493,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -512,8 +531,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -552,11 +570,10 @@
                             </div>
                         </div>-->
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -594,8 +611,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -633,8 +649,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -673,11 +688,10 @@
                             </div>
                         </div>-->
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -715,8 +729,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -754,8 +767,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -793,11 +805,10 @@
                             </div>
                         </div>-->
 
-                        <div class="clearfix"></div>
-                        <div class="divider-md"></div>
+								<div class="clearfix"></div>
+								<div class="divider-md"></div>
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -836,8 +847,7 @@
                             </div>
                         </div>-->
 
-
-                        <!--<div class="col-md-4">
+								<!--<div class="col-md-4">
                             <div class="box box-transparent">
                                 <div class="box-content">
                                     <div class="media">
@@ -875,19 +885,17 @@
                             </div>
                         </div>-->
 
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+			</div>
+		</section>
 
-    </div>
-</section>
+		<script src="js/fenby3.min.js"></script>
+		<script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>
 
+	</body>
 
-<script src="js/fenby3.min.js"></script>
-<script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>
-
-
-
-</body></html>
+</html>
